@@ -52,6 +52,8 @@ main {
     padding-top: 40px;
     letter-spacing: 0.5px;
     line-height: 1.5;
+    font-size: 22px;
+    font-weight: 600px;
 }
 .floral-tab {
     background-image: url(./assets/flower-banner.jpg);
@@ -66,14 +68,14 @@ main {
     display: grid; 
     grid-template-columns: auto auto auto; 
     margin-top: 100px; 
-    grid-template-rows: 250px; 
+    grid-template-rows: 300px; 
     gap: 100px; 
     position: relative;
 }
 
 .photo p {
     color: white; 
-    font-size: 20px; 
+    font-size: 30px; 
     letter-spacing: 0.5px; 
     position: absolute;
     bottom: 5px;
@@ -99,6 +101,7 @@ main {
     background-position: center;
     position: relative;
     text-align: end;
+    object-fit: none;
 }
 
 @media only screen and (max-width: 992px) {
@@ -108,7 +111,7 @@ main {
 
     .gallery {
         grid-template-columns: auto auto;
-        grid-template-rows: 250px 250px;
+        grid-template-rows: 300px 300px;
     }
 
     .third {
@@ -116,6 +119,10 @@ main {
         margin-left: 25%;
         margin-right: 25%;
     }
+
+    .photo p {
+        font-size: 25px; 
+}
 }
 
 
@@ -147,14 +154,13 @@ main {
 
     .gallery {
         grid-template-columns: auto;
-        grid-template-rows: 250px 250px 250px;
+        grid-template-rows: 300px 300px 300px;
         padding-left: 100px;
         padding-right: 100px;
-}
+    }
 
     .third {
         margin-left: 0%;
         margin-right: 0%;
-}
-
+    }
 }
